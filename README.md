@@ -55,6 +55,42 @@ initial-scale: 1.0 배율
 calc() 함수는 괄호 안에 표현식 하나를 받고, 표현식의 결과가 최종 값이 된다.
 표현식은 단순 계산식이면 무엇이든 가능하다.
 
+
+### @media
+미디어 쿼리는 미디어 타입을 인식하고, 콘텐츠를 읽어들이는 방식 기기나 브라우저의 물리적 속성을 감지할 수 있는 유용한 장치(기능)
+모든 미디어 쿼리는 다음 두 가지 구성 요소를 지니고 있다.
+- 미디어 타입
+- 조건에 대한 물음(query)
+
+```css
+@media 미디어_타입 and (조건에_대한_물음)
+ {
+    /* 
+    미디어 타입과 조건을
+    모두 만족할 때 덮어씌울
+    스타일 선언문
+     */
+ }
+
+ @media screen and (max-width: 768px)
+ {
+    /* 
+    화면 (screen)의 
+    너비가 768px 이하일 경우에 
+    여기에 정의된 스타일 선언문을
+    추가 적용할 것이다.
+     */
+ }
+ ```
+
+```html
+<link rel="stylesheet" href="style.css" media="screen and (max-width: 768px)">
+```
+
+```javascript
+@import url("style.css") screen and (max-width: 768px);
+```
+
 ---
 
 
