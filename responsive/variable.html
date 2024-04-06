@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        .container {
+            width: 100vw;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: tomato;
+            /* 부모의 너비 기준 */
+            /* padding: 10%;
+            padding-top: 10%;
+            padding-left: 10%; */
+
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            height: 300px;
+            background-color: orange;
+        }
+        .aside {
+            float: right;
+            width: 40%;
+            height: 300px;
+            background-color: purple;
+
+        }
+        .main2 {
+            float: left;
+            width: 400px;
+            height: 300px;
+            background-color: orange;
+        }
+        .aside2 {
+            float: right;
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+
+        }
+        .footer{
+            /* float의 영향을 위헤 clear 시 요소를 새롭게 배치 */
+            clear: both;
+            width: 960px;
+            height: 100px;
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="main">MAIN</div>
+        <div class="aside">ASIDE</div>
+        <div class="footer">FOOTER</div>
+    </div>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="main2">MAIN</div>
+        <div class="aside2">ASIDE</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>

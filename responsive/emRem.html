@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outer{
+        font-size: 20px;
+    }
+    .inner{
+        /* margin, padding의 em, rem의 기준은 자신의 font-size 기준 */
+        font-size: 10px; 
+        width:200px;
+        height: 200px;
+        display: inline-block;
+        background-color: tomato;
+        /* em은 자신의 font-size 기준 */
+        padding: 1em;
+        /* rem은 루트(html)의 font-size기준 */
+        margin: 1rem;
+    }
+</style>
+<body>
+    <div class="outer">
+        <div class="inner">
+            토마토
+        </div>
+    </div>
+</body>
+</html>
